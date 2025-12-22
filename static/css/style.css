@@ -198,3 +198,16 @@ footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; text-ali
     box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4); /* Ombra verde */
     transform: translateY(-2px); /* Si alza leggermente */
 }
+
+/* --- EFFETTO 3D SCHEDE TRATTAMENTI --- */
+.card-trattamento {
+    transition: all 0.3s ease; /* Fluidità */
+    border-radius: 10px;       /* Angoli arrotondati (opzionale, sta bene) */
+}
+
+.card-trattamento:hover {
+    transform: translateY(-5px);  /* Si alza verso l'alto */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Ombra morbida sotto */
+    background-color: #f9f9f9;    /* Leggero cambio colore sfondo (opzionale) */
+    cursor: pointer;              /* Cambia cursore */
+}

@@ -13,7 +13,7 @@
 
         <div class="treatments-grid">
             {{ range .Pages }}
-            <div class="treatment-card">
+            <div class="treatment-card card-trattamento">
                 {{ with .Params.image }}
                 <img src="{{ . }}" alt="{{ $.Title }}" class="card-img">
                 {{ end }}
