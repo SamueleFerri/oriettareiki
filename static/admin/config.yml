@@ -1,43 +1,53 @@
 backend:
   name: git-gateway
-  branch: main
-media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "images"
+  branch: main # Assicurati che il branch su GitHub sia 'main' o 'master'
+
+media_folder: "static/images/uploads" # Dove finiscono le foto caricate
+public_folder: "/images/uploads"
+
+# L'indirizzo del sito (cambialo con quello vero quando lo avrai)
+site_url: https://oriettareiki.netlify.app
+
+# Configurazione interfaccia
+display_url: https://oriettareiki.netlify.app
+logo_url: https://oriettareiki.netlify.app/images/logo.png
+locale: "it"
+
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/post
-    label: "Posts" # Used in the UI
-    folder: "content/posts" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
-    media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
+  # SEZIONE HOMEPAGE
+  - name: "home"
+    label: "Homepage"
     files:
-      - file: "content/_index.md"
-        label: "Home Page"
-        name: "home"
+      - name: "index"
+        label: "Contenuti Homepage"
+        file: "content/_index.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Blurb", name: "blurb", widget: "text" }
-          - {
-              label: "Section",
-              name: "section",
-              widget: "object",
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
-      - file: "content/about/index.md"
-        label: "About"
-        name: "about"
+          - {label: "Titolo Principale", name: "title", widget: "string"}
+          - {label: "Sottotitolo / Frase Ispirazionale", name: "subtitle", widget: "text"}
+          - {label: "Foto di Copertina", name: "image", widget: "image"}
+          - {label: "Testo di Benvenuto", name: "body", widget: "markdown"}
+
+  # SEZIONE TRATTAMENTI (Dinamica: lei può aggiungerne quanti ne vuole)
+  - name: "trattamenti"
+    label: "Trattamenti"
+    folder: "content/trattamenti"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nome Trattamento", name: "title", widget: "string"}
+      - {label: "Foto", name: "image", widget: "image"}
+      - {label: "Descrizione Breve", name: "description", widget: "text"}
+      - {label: "Descrizione Completa", name: "body", widget: "markdown"}
+      - {label: "Prezzo (Opzionale)", name: "price", widget: "string", required: false}
+
+  # SEZIONE CHI SONO
+  - name: "about"
+    label: "Chi Sono"
+    files:
+      - name: "about"
+        label: "Pagina Chi Sono"
+        file: "content/about.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+          - {label: "Titolo", name: "title", widget: "string", default: "Chi Sono"}
+          - {label: "La mia foto", name: "image", widget: "image"}
+          - {label: "La mia storia", name: "body", widget: "markdown"}
