@@ -6,8 +6,7 @@ backend:
 media_folder: "static/images/uploads" # Dove finiscono le foto caricate
 public_folder: "/images/uploads"
 
-# --- QUI HO AGGIORNATO I LINK A VERCEL ---
-# (Se il tuo link Vercel è diverso, correggilo qui sotto)
+# --- LINK A VERCEL ---
 site_url: https://oriettareiki.vercel.app
 display_url: https://oriettareiki.vercel.app
 logo_url: https://oriettareiki.vercel.app/images/logo.png
