@@ -1,61 +1,87 @@
-{{ define "main" }}
-<main>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | Centro Olistico</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #555;
+            line-height: 1.6;
+        }
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: #f4f7f6; /* Grigio-verde chiarissimo rilassante */
+        }
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-family: 'Georgia', serif; /* Font elegante per il titolo */
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 0;
+        }
 
-  <section class="hero">
-    {{ with .Params.image }}
-    <div class="hero-image-container">
-       <img src="{{ . }}" alt="Copertina" class="hero-img">
-    </div>
-    {{ end }}
+        /* WELCOME SECTION */
+        .welcome-content {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
 
-    <div class="hero-text">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
-        <p class="subtitle">{{ . }}</p>
-      {{ end }}
-    </div>
-  </section>
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
-  <section class="welcome-content">
-    <div class="container">
-      {{ .Content }}
-    </div>
-  </section>
+    <section class="hero">
+        <div class="container">
+            {{ with .Params.image }}
+            <img src="{{ . }}" alt="Copertina" class="hero-img">
+            {{ end }}
 
-</main>
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+                <p class="subtitle">{{ . }}</p>
+            {{ end }}
+        </div>
+    </section>
 
-<style>
-  .hero {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: #f9f9f9; /* Un grigio chiarissimo elegante */
-  }
-  .hero-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px; /* Non farla diventare gigante */
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  .hero-text h1 {
-    font-family: serif; /* Font elegante per il titolo */
-    color: #2c3e50;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .subtitle {
-    color: #7f8c8d;
-    font-size: 1.2rem;
-    font-style: italic;
-  }
-  .welcome-content {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    line-height: 1.6;
-    font-family: sans-serif;
-  }
-</style>
-{{ end }}
+    <section class="welcome-content">
+        {{ .Content }}
+    </section>
+
+    <footer>
+        <p>© {{ now.Year }} {{ .Title }} - Trattamenti Olistici e Reiki</p>
+    </footer>
+
+</body>
+</html>
