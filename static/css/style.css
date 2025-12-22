@@ -108,3 +108,62 @@ footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; text-ali
 .card-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem; color: #2c3e50; }
 .btn-details { display: inline-block; margin-top: 1rem; padding: 0.5rem 1.5rem; border: 1px solid #2c3e50; border-radius: 50px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
 
+/* --- STILE MODULO CONTATTI --- */
+.contact-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto; /* Centra il modulo */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box; /* Importante per non sbordare */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2c3e50;
+    outline: none;
+    background-color: #fcfcfc;
+}
+
+.btn-send {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.btn-send:hover {
+    background-color: #27ae60;
+}

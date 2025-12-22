@@ -1,4 +1,6 @@
 ---
 title: "Contatti"
+layout: "contact"  <-- AGGIUNGI QUESTA RIGA
+image: ""
 ---
-Mandami un messaggio su WhatsApp o una mail.
+Scrivimi un messaggio qui sotto per prenotare una seduta.
