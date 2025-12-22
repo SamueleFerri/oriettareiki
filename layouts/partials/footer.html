@@ -1,20 +1,10 @@
-</main>
-	
 <footer>
-	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+    <div class="footer-content">
+        <h3>{{ .Title }}</h3>
+        <p>Benessere naturale, Reiki e trattamenti olistici.</p>
+        <p>📍 Via Alcide de Gasperi 61, Gambettola | 📞 347 645 1744</p>
+    </div>
+    <div class="copyright">
+        © {{ now.Year }} Creato con amore per Mamma.
+    </div>
 </footer>
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-
-</body>
-</html>
