@@ -1,11 +1,61 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+<main>
 
-<h1>{{ .Params.title }}</h1>
+  <section class="hero">
+    {{ with .Params.image }}
+    <div class="hero-image-container">
+       <img src="{{ . }}" alt="Copertina" class="hero-img">
+    </div>
+    {{ end }}
 
-<p>{{ .Params.blurb }}</p>
+    <div class="hero-text">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="subtitle">{{ . }}</p>
+      {{ end }}
+    </div>
+  </section>
 
-<h2>{{ .Params.section.heading }}</h2>
+  <section class="welcome-content">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
 
-<p>{{ .Params.section.text }}</p>
+</main>
 
-{{ partial "footer.html" . }}
+<style>
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9; /* Un grigio chiarissimo elegante */
+  }
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Non farla diventare gigante */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .hero-text h1 {
+    font-family: serif; /* Font elegante per il titolo */
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  .welcome-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+  }
+</style>
+{{ end }}
