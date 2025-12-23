@@ -2,6 +2,7 @@ backend:
   name: github
   repo: SamueleFerri/oriettareiki
   branch: main
+  base_url: https://orietta-login.vercel.app
 
 media_folder: "static/images/uploads" # Dove finiscono le foto caricate
 public_folder: "/images/uploads"
