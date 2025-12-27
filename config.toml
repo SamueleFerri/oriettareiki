@@ -2,19 +2,31 @@ title = "Orietta Reiki"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
+    identifier = "home"
+    name = "Home"
+    url = "/"
     weight = 10
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "Chi sono"
     url = "/about"
     weight = 20
 
-[[menu.main]]
-  identifier = "news"
-  name = "News"
-  url = "/news"
-  weight = 40
+  [[menu.main]]
+    identifier = "trattamenti"
+    name = "Trattamenti"
+    url = "/trattamenti"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/news"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "contatti"
+    name = "Contatti"
+    url = "/contatti"
+    weight = 50

@@ -8,10 +8,11 @@
     </div>
 
     <ul class="nav-links" id="nav-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">Chi Sono</a></li>
-        <li><a href="/trattamenti">Trattamenti</a></li>
-        <li><a href="/contatti">Contatti</a></li>
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
     </ul>
 </nav>
 
