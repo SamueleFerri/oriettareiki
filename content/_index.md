@@ -1,5 +1,5 @@
 ---
-title: Benvenuti da Benessere Mente e Corpo da Orietta
+title: Benvenuti da Orietta Benessere Mente e Corpo
 blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
