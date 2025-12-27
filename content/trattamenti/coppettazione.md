@@ -1,6 +1,6 @@
 ---
 title: Massaggio la viso Kobido
-image: /images/uploads/460979.jpg
+image: /images/uploads/istockphoto-1267306075-612x612.jpg
 description: Masaggio effetto lifting naturale
 price: "55"
 ---
