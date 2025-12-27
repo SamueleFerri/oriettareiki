@@ -25,13 +25,17 @@
 
             {{ .Content }}
 
-            {{ if eq .Section "trattamenti" }}
             <div style="margin-top: 3rem; text-align: center;">
-                <a href="/trattamenti" class="btn-back">
-                    ← Torna alla lista
-                </a>
+                {{ if eq .Section "trattamenti" }}
+                    <a href="/trattamenti" class="btn-back">
+                        ← Torna ai Trattamenti
+                    </a>
+                {{ else if eq .Section "news" }}
+                    <a href="/news" class="btn-back">
+                        ← Torna alle News
+                    </a>
+                {{ end }}
             </div>
-            {{ end }}
 
         </div>
     </main>
