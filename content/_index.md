@@ -1,5 +1,5 @@
 ---
-title: Benvenuti da Orietta Reiki
+title: Benvenuti da Benessere Mente e Corpo da Orietta
 blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
