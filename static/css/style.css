@@ -80,8 +80,6 @@ transition: 0.3s;
 }
 }
 
-/* --- ALTRI STILI (Header, Footer, ecc...) --- */
-/* Incolla qui il resto del CSS specifico per ogni pagina (Hero, Card, ecc) che avevi prima */
 main { flex: 1; }
 footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; text-align: center; margin-top: auto; }
 .footer-content h3 { font-family: 'Playfair Display', serif; font-weight: 400; margin-bottom: 1rem; }
@@ -170,7 +168,6 @@ footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; text-ali
 
 /* --- EFFETTO HOVER BOTTOME TRATTAMENTI --- */
 
-/* Questo dice: "Quando il mouse passa sopra (.btn-details:hover)" */
 .btn-details:hover {
     background-color: #2c3e50;   /* Riempi lo sfondo col colore scuro del brand */
     color: #ffffff;              /* Fai diventare il testo bianco */
@@ -181,7 +178,6 @@ footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; text-ali
 }
 
 /* --- BOTTONE "TORNA ALLA LISTA" --- */
-/* Stile normale (com'era prima) */
 .btn-back {
     display: inline-block;
     padding: 10px 20px;
