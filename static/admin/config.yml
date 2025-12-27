@@ -42,6 +42,19 @@ collections:
       - {label: "Descrizione Completa", name: "body", widget: "markdown"}
       - {label: "Prezzo (Opzionale)", name: "price", widget: "string", required: false}
 
+# SEZIONE NEWS
+  - name: "news"
+    label: "News ed Eventi"
+    folder: "content/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titolo News", name: "title", widget: "string"}
+      - {label: "Data Pubblicazione", name: "date", widget: "datetime"}
+      - {label: "Immagine Principale", name: "image", widget: "image"}
+      - {label: "Descrizione Breve (Anteprima)", name: "description", widget: "text"}
+      - {label: "Testo della News", name: "body", widget: "markdown"}
+
   # SEZIONE CHI SONO
   - name: "about"
     label: "Chi Sono"
