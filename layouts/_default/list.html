@@ -7,8 +7,9 @@
 
     <main>
         <div class="page-header">
-            <h1>I Nostri Trattamenti</h1>
-            <p>Scopri il percorso più adatto al tuo benessere</p>
+            <h1>{{ .Title }}</h1>
+
+            <p>{{ .Params.description }}</p>
         </div>
 
         <div class="treatments-grid">
