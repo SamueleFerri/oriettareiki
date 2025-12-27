@@ -7,5 +7,5 @@ section:
 subtitle: Regalati un viaggio verso il benessere
 image: /images/uploads/logo-cuore2m4-3x2.png
 ---
-## *Un'esperienza unica per armonizzare corpo,
+#### *Un'esperienza unica per armonizzare corpo,
 mente e spirito.*
