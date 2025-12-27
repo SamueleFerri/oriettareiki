@@ -1,5 +1,5 @@
 ---
-title: Prova 03
+title: Riflessologia  plantare
 image: /images/uploads/1123013-2023_01_08-09_45_47-utc-.jpg
 description: Per sciogliere lo stress.
 price: 35€
