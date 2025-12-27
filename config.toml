@@ -1,4 +1,5 @@
 title = "Orietta Reiki"
+baseURL = "https://www.oriettavandi.com/"
 
 [menu]
   [[menu.main]]
