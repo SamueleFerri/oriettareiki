@@ -4,11 +4,8 @@ blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
   text: You can put even more content in here.
-subtitle: Prova tecnica
+subtitle: Regalati un viaggio verso il benessere
 image: /images/uploads/logo-cuore2m4.png
 ---
-<!--StartFragment-->
-
-*Benvenuti nel mio nuovo sito, questa è una prova.*
-
-<!--EndFragment-->
+Un'esperienza unica per armonizzare corpo,
+mente e spirito.
