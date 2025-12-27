@@ -1,6 +1,6 @@
 ---
 title: Riflessologia  plantare
-image: /images/uploads/1123013-2023_01_08-09_45_47-utc-.jpg
+image: /images/uploads/dolore-pianta-del-piede.jpg
 description: Il benessere attraverso i piedi
 price: ""
 ---
