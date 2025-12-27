@@ -7,8 +7,8 @@ backend:
 media_folder: "static/images/uploads" # Dove finiscono le foto caricate
 public_folder: "/images/uploads"
 
-# --- LINK A VERCEL ---
-site_url: https://oriettareiki.vercel.app
+# --- LINK ---
+site_url: https://oriettavandi.com
 display_url: https://oriettareiki.vercel.app
 #logo_url: https://oriettareiki.vercel.app/images/favicon.png
 
@@ -24,6 +24,7 @@ collections:
         file: "content/_index.md"
         fields:
           - {label: "Titolo Principale", name: "title", widget: "string"}
+          - { label: "Meta Descrizione (Per Google)", name: "description", widget: "text" }
           - {label: "Sottotitolo / Frase Ispirazionale", name: "subtitle", widget: "text"}
           - {label: "Foto di Copertina", name: "image", widget: "image"}
           - {label: "Testo di Benvenuto", name: "body", widget: "markdown"}
