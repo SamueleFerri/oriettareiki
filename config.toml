@@ -12,3 +12,9 @@ title = "Orietta Reiki"
     name = "About"
     url = "/about"
     weight = 20
+
+[[menu.main]]
+  identifier = "news"
+  name = "News"
+  url = "/news"
+  weight = 40
