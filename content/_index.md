@@ -5,7 +5,7 @@ section:
   heading: A Subsection
   text: You can put even more content in here.
 subtitle: Prova tecnica
-image: /images/uploads/460979.jpg
+image: /images/uploads/logo-cuore2m4.png
 ---
 <!--StartFragment-->
 
