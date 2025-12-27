@@ -28,9 +28,7 @@
             </div>
 
             <div class="contact-form-container">
-                <form action="https://formspree.io/f/xlgebrge" method="POST">
-                    <input type="hidden" name="_next" value="https://www.oriettavandi.com/grazie">
-
+                <form id="contactForm" action="https://formspree.io/f/xlgebrge" method="POST">
                     <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="nome" placeholder="Il tuo nome" required>
@@ -60,6 +58,35 @@
 
         </div>
     </main>
+
+    <script>
+        var form = document.getElementById("contactForm");
+
+        async function handleSubmit(event) {
+          event.preventDefault(); // Blocca il comportamento standard
+          var data = new FormData(event.target);
+
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              // SE TUTTO VA BENE -> VAI ALLA PAGINA GRAZIE
+              window.location.href = "https://www.oriettavandi.com/grazie";
+            } else {
+              // SE C'È UN ERRORE
+              alert("C'è stato un problema nell'invio del messaggio. Riprova più tardi.");
+            }
+          }).catch(error => {
+            alert("C'è stato un problema nell'invio del messaggio.");
+          });
+        }
+
+        form.addEventListener("submit", handleSubmit)
+    </script>
 
     {{ partial "footer.html" . }}
 
