@@ -6,3 +6,5 @@ description: Le carte angeliche sono un oracolo spirituale utilizzato per
 ---
 Si concentrano sull’ascolto interiore e sul sostegno emotivo.
 Offrono un aiuto nei momenti di dubbio, cambiamento o ricerca di chiarezza.
+
+Non promettono predizioni assolute, ma offrono una guida spirituale che illumina il cammino.
