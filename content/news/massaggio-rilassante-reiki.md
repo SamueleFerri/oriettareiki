@@ -4,4 +4,4 @@ date: 2025-12-27T14:00:49.827Z
 image: /images/uploads/reiki-a.jpg
 description: Seduta di 1h Massaggio Rilassante + Reiki
 ---
-p﻿rova di testo per la news, sconto 20 %
+Sconto 20 % sulla prima seduta
