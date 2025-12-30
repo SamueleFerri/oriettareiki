@@ -13,4 +13,4 @@ Il Kobido combina:
 * pressioni e digitopressioni sui meridiani energetici
 * tecniche di drenaggio e tonificazione
 
-Questa combinazione stimola i tessuti del viso, del collo e del décolleté, migliorando la circolazione e favorendo la rigenerazione cellulare,
+Questa combinazione stimola i tessuti del viso, del collo e del décolleté, migliorando la circolazione e favorendo la rigenerazione cellulare.
