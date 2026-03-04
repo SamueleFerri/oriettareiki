@@ -1,6 +1,6 @@
 ---
 title: Radiostesia
-image: /images/uploads/pendolo-e-logo.jpg
+image: /images/uploads/pendolo-e-logo-2m.png
 description: La radioestesia è una pratica che utilizza strumenti come il
   pendolo o le bacchette per rilevare e interpretare le vibrazioni energetiche
   di un luogo, persona o oggetto.
